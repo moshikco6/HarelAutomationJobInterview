@@ -23,7 +23,7 @@ jobs:
         uses: browser-actions/setup-chrome@v1
 
       - name: Run tests
-        run: mvn test -Dheadless=false
+        run: mvn test -Dheadless=true
 
       - name: Publish test results
         uses: dorny/test-reporter@v1
