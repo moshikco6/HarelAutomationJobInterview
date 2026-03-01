@@ -1,7 +1,7 @@
 {
   "browser": "chrome",
   "implicitWait": 30,
-  "pageLoadTimeout": 30,
+  "pageLoadTimeout": 90,
   "headless": false,
   "URL": "https://digital.harel-group.co.il/travel-policy",
   "firstTimePurchase": {

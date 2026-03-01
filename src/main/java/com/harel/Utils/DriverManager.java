@@ -36,6 +36,9 @@ public class DriverManager {
         options.addArguments("--window-size=1920,1080");
         options.addArguments("--disable-notifications");
         options.addArguments("--lang=he-IL");
+        options.addArguments("--disable-extensions");
+        options.addArguments("--disable-renderer-backgrounding");
+        options.addArguments("--disable-backgrounding-occluded-windows");
         return options;
     }
 
