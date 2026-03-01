@@ -1,0 +1,31 @@
+{
+  "browser": "chrome",
+  "implicitWait": 30,
+  "pageLoadTimeout": 30,
+  "headless": false,
+  "URL": "https://digital.harel-group.co.il/travel-policy",
+  "firstTimePurchase": {
+    "by": "css",
+    "element": "[data-hrl-bo=\"purchase-for-new-customer\"]"
+  },
+  "direcrion" : {
+    "by": "css",
+    "element": "[id^='destination-']"
+  },
+  "nextToPickDates" : {
+    "by": "css",
+    "element": "[data-hrl-bo=\"wizard-next-button\"]"
+  },
+  "startDateInput" : {
+    "by": "css",
+    "element": "[data-hrl-bo=\"startDateInput_input\"]"
+  },
+  "totalDays" : {
+    "by": "css",
+    "element": "[class=\"jss219\"]"
+  },
+  "moveToPassDetails" : {
+    "by": "css",
+    "element": "[data-hrl-bo=\"wizard-next-button\"]"
+  }
+}
