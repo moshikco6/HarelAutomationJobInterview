@@ -25,7 +25,9 @@ public class DriverManager {
 
     private static ChromeOptions buildChromeOptions() {
         ChromeOptions options = new ChromeOptions();
-        if (ConfigReader.get().headless) {
+        boolean headless = ConfigReader.get().headless
+                || Boolean.parseBoolean(System.getProperty("headless", "false"));
+        if (headless) {
             options.addArguments("--headless=new");
         }
         options.addArguments("--no-sandbox");
